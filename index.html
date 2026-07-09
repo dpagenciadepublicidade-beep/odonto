@@ -5,56 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oralis Studio | Odontologia de Elite</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-[#0f1717] text-white">
+<body class="bg-[#0b1111] text-zinc-100 flex flex-col min-h-screen selection:bg-[#d4af37] selection:text-black">
 
-    <!-- Hero Section (Corrigido para alto contraste) -->
-    <section class="relative min-h-screen flex items-center px-6 lg:px-20 bg-gradient-to-br from-[#1a2929] to-[#0f1717]">
-        <div class="max-w-4xl z-10">
-            <span class="text-[#d4af37] tracking-[0.2em] text-xs uppercase font-semibold">Odontologia de Alta Performance</span>
-            <h1 class="text-5xl lg:text-7xl mt-6 leading-tight">A alta costura aplicada à <br> <span class="italic text-[#d4af37]">arquitetura do seu sorriso.</span></h1>
-            <p class="mt-8 text-gray-400 text-lg max-w-lg leading-relaxed">
-                Aliamos tecnologia robótica de ponta com um rigor estético impecável. Transformações reais, feitas para durar.
+    <!-- Navegação Premium -->
+    <nav class="bg-[#0b1111]/90 backdrop-blur-md border-b border-zinc-800/50 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-widest text-[#d4af37] uppercase flex items-center gap-2">
+                ORALIS <span class="text-xs text-zinc-400 font-light tracking-normal">STUDIO</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm tracking-wider uppercase font-medium">
+                <a href="index.html" class="text-[#d4af37] border-b border-[#d4af37] pb-1">Início</a>
+                <a href="criadores.html" class="text-zinc-400 hover:text-white transition">Quem Criou o Site</a>
+            </div>
+            <a href="https://wa.me/5553991548509" target="_blank" class="bg-[#d4af37] hover:bg-white text-black text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-xs transition-all shadow-lg shadow-[#d4af37]/10">
+                Agendar Consulta
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center px-6 lg:px-20 bg-gradient-to-r from-[#0b1111] via-[#111a1a] to-transparent overflow-hidden">
+        <div class="max-w-4xl z-10 py-12">
+            <span class="text-[#d4af37] tracking-[0.25em] text-xs uppercase font-semibold bg-[#d4af37]/5 px-3 py-1.5 rounded-full border border-[#d4af37]/20">Odontologia de Alta Performance & Luxo</span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl mt-8 leading-tight tracking-tight font-light">
+                A alta costura aplicada à <br> 
+                <span class="italic font-normal text-[#d4af37]">arquitetura do seu sorriso.</span>
+            </h1>
+            <p class="mt-6 text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed">
+                Aliamos tecnologia tridimensional robótica de ponta com um rigor estético impecável para esculpir transformações que ultrapassam a odontologia convencional.
             </p>
-            <div class="mt-10 flex gap-4">
-                <a href="#" class="bg-[#d4af37] text-black px-8 py-4 font-bold hover:bg-white transition-all">Agendar Consulta</a>
+            <div class="mt-10 flex flex-wrap gap-4">
+                <a href="https://wa.me/5553991548509" target="_blank" class="bg-[#d4af37] text-black px-8 py-4 font-bold hover:bg-white transition-all tracking-wide uppercase text-xs">Transformar meu Sorriso</a>
             </div>
         </div>
-        <!-- Imagem de fundo decorativa -->
-        <div class="absolute right-0 top-0 w-1/3 h-full bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800');"></div>
+        <!-- Imagem de Fundo (Alta Resolução que NUNCA quebra) -->
+        <div class="absolute right-0 top-0 w-full lg:w-1/2 h-full bg-cover bg-center opacity-15 lg:opacity-40 pointer-events-none mix-blend-luminosity" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200');"></div>
     </section>
 
-    <!-- Services Section (Corrigido layout de cards) -->
-    <section class="py-24 px-6 lg:px-20 bg-[#141d1d]">
-        <h2 class="text-4xl text-center mb-16 text-[#d4af37]">Nossas Especialidades</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="bg-[#1a2929] p-8 border border-[#2d3e3e] hover:border-[#d4af37] transition-all">
-                <h3 class="text-2xl mb-4">Lentes Cerâmicas</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Lâminas de porcelana importada, micro-esculpidas para perfeita simetria.</p>
+    <!-- Section Serviços / Especialidades -->
+    <section class="py-24 px-6 lg:px-20 bg-[#101717] border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#d4af37] text-xs font-bold tracking-widest uppercase">Procedimentos</span>
+                <h2 class="text-4xl text-zinc-100 mt-3 font-light">Nossas Especialidades Premium</h2>
             </div>
-            <!-- Card 2 -->
-            <div class="bg-[#1a2929] p-8 border border-[#2d3e3e] hover:border-[#d4af37] transition-all">
-                <h3 class="text-2xl mb-4">Implantes</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Cirurgia guiada por computador. Sem pontos complexos, retorno rápido.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-[#1a2929] p-8 border border-[#2d3e3e] hover:border-[#d4af37] transition-all">
-                <h3 class="text-2xl mb-4">Alinhadores</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Ortodontia invisível avançada. Conforto e discrição total.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-[#141e1e] border border-zinc-800/60 rounded-xl overflow-hidden hover:border-[#d4af37]/50 transition-all duration-300 group">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl text-zinc-100 mb-3 font-normal group-hover:text-[#d4af37] transition-colors">Lentes Cerâmicas Ultrafinas</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Lâminas de porcelana importada pura, micro-esculpidas para corrigir simetria, cor e imperfeições mantendo a estrutura original intacta.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-[#141e1e] border border-zinc-800/60 rounded-xl overflow-hidden hover:border-[#d4af37]/50 transition-all duration-300 group">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl text-zinc-100 mb-3 font-normal group-hover:text-[#d4af37] transition-colors">Implantes de Carga Imediata</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Substituições de elementos com cirurgia robótica guiada por computador. Sem pontos complexos e com retorno funcional ultraveloz.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-[#141e1e] border border-zinc-800/60 rounded-xl overflow-hidden hover:border-[#d4af37]/50 transition-all duration-300 group">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=600');"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl text-zinc-100 mb-3 font-normal group-hover:text-[#d4af37] transition-colors">Alinhadores Invisíveis Premium</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Ortodontia invisível avançada por escaneamento sequencial. Movimentações rápidas e confortáveis sem bráquetes metálicos ou restrições.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Simples e Legível) -->
-    <footer class="py-12 text-center text-gray-500 border-t border-[#1a2929]">
-        <p>© 2026 Oralis Studio. Todos os direitos reservados.</p>
-        <p class="text-xs mt-2">Desenvolvido com excelência por DP.</p>
+    <!-- Rodapé e Identificação Comercial -->
+    <footer class="bg-[#080d0d] border-t border-zinc-900 py-16 px-6 text-zinc-400 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-zinc-200">ODONTOLOGIA & ARTE</p>
+                <p class="text-xs text-zinc-500 mt-1">Av. das Américas, 4200 — Barra da Tijuca, RJ</p>
+                <p class="text-xs text-zinc-500">RT: Dr. Alexandre Lima | CRO-RS 99999</p>
+            </div>
+            <div class="text-center md:text-right text-xs text-zinc-500">
+                <p>© 2026 Oralis Studio. Todos os direitos reservados.</p>
+                <p class="mt-1">Desenvolvido sob medida por <a href="criadores.html" class="text-[#d4af37] hover:underline font-medium">DP (Dárcio & Pâmela)</a>.</p>
+            </div>
+        </div>
+
+        <!-- Banner Exclusivo Captação de Clientes da Agência -->
+        <div class="max-w-3xl mx-auto mt-12 p-6 bg-[#101717] rounded-xl border border-zinc-800 text-center">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-[#d4af37] bg-[#d4af37]/10 px-2.5 py-1 rounded">Ambiente Demonstrativo</span>
+            <p class="text-xs text-zinc-400 mt-3 mb-4 max-w-md mx-auto">Este projeto representa um layout conceitual de altíssimo padrão criado estruturalmente como portfólio comercial premium.</p>
+            <a href="https://wa.me/5553991548509" target="_blank" class="inline-flex items-center gap-2 bg-[#25d366] hover:bg-[#20ba5a] text-black font-bold px-5 py-2.5 text-xs uppercase tracking-wider rounded transition">
+                <i class="fab fa-whatsapp text-sm"></i> Gostei deste site, quero um igual para mim
+            </a>
+        </div>
     </footer>
 
 </body>
